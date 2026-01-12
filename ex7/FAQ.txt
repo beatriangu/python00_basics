@@ -1,0 +1,75 @@
+FAQ – Dudas frecuentes sobre el módulo inicial de Python (Growing Code)
+
+Este documento recoge dudas habituales surgidas durante el desarrollo del módulo inicial de Python (Growing Code), junto con respuestas aclaratorias basadas en una lectura cuidadosa del subject y en la experiencia práctica durante las evaluaciones.
+
+El objetivo es ayudar a comprender mejor el alcance de los ejercicios y facilitar su desarrollo de la forma más adecuada posible.
+
+
+1. ¿Podemos crear nuestras propias funciones o solo usar las funciones autorizadas?
+
+Sí, se pueden crear funciones propias, salvo que el subject indique explícitamente lo contrario.
+
+Cuando el subject enumera “funciones autorizadas”, normalmente se refiere a funciones externas o built-in como print(), input(), range(), etc., no a la definición de funciones con def.
+
+De hecho, en este módulo el objetivo principal es precisamente aprender a definir funciones con una firma concreta, por lo que el uso de def está implícitamente permitido incluso cuando aparece listado como “función autorizada” en algún ejercicio.
+
+
+2. Si una función o método no aparece en “funciones autorizadas”, ¿está prohibida?
+
+En este módulo conviene adoptar un enfoque conservador.
+
+Si el subject enumera funciones autorizadas, lo más seguro es limitarse exclusivamente a ellas, aunque Python permita muchas más opciones.
+
+Los métodos propios de los objetos (por ejemplo, str.upper(), str.capitalize(), etc.) suelen ser aceptables cuando el subject los sugiere o no los contradice explícitamente.
+
+En cambio, el uso de funciones no mencionadas (len(), sum(), isinstance(), etc.) puede provocar que un ejercicio no pase la evaluación, aunque el código funcione correctamente.
+
+
+3. ¿Por qué el archivo main.py no encaja bien con la estructura de carpetas?
+
+El archivo main.py está pensado como una herramienta de apoyo para facilitar pruebas y comprensión del código, pero no siempre encaja de forma natural con la estructura final de carpetas exigida por el subject.
+
+No se trata de un error del alumnado, sino de una limitación de la propia herramienta. Además, main.py no forma parte del sistema de evaluación.
+
+Una forma segura de probar los ejercicios es entrar en el intérprete (python3) e importar directamente las funciones, que además refleja mejor cómo se evalúan los ejercicios.
+
+
+4. ¿Cuándo se puede usar el bloque if __name__ == "__main__"?
+
+Solo debe usarse cuando el subject lo indique explícitamente o lo incluya entre las opciones permitidas.
+
+En la mayoría de ejercicios de este módulo no se espera su uso, ya que las funciones deben poder importarse y ejecutarse desde fuera sin efectos secundarios.
+
+Aunque Python lo permita, añadir este bloque cuando no está indicado puede hacer que un ejercicio no pase la evaluación.
+
+
+5. ¿Por qué en algunos ejercicios se usa input() y en otros no?
+
+Depende completamente del subject de cada ejercicio.
+
+En algunos casos se evalúa la gestión de entrada y salida, y entonces input() es obligatorio.
+
+En otros, la función debe recibir parámetros directamente y no pedir información por consola.
+
+No existe una regla general de Python aquí, sino un contrato específico definido por cada enunciado.
+
+
+6. El código no parece muy “Pythonic”, ¿es normal?
+
+Sí, es normal.
+
+En este módulo no se busca escribir el código más elegante ni con el mejor diseño posible, sino entender el flujo de ejecución, respetar las firmas de las funciones y cumplir exactamente el contrato marcado por el subject.
+
+Más adelante se trabajarán aspectos como el diseño, la reutilización del código y las buenas prácticas. En esta fase, escribir menos código suele ser más seguro que escribir “mejor” código.
+
+
+Conclusión
+
+En el módulo inicial de Python, la clave no es programar como en un proyecto real, sino leer el subject con precisión y cumplirlo exactamente.
+
+Entender esto desde el principio ayuda a evitar confusiones, bloqueos y frustración, y permite avanzar con mayor seguridad.
+
+
+Sugerencia práctica
+
+Probar los ejercicios importando las funciones desde el intérprete (python3) ayuda a entender cómo serán evaluados realmente y a detectar errores de forma más clara.

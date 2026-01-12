@@ -3,6 +3,5 @@ __pycache__/
 *.pyc
 
 # Text and PDF files
-*.txt
 *.pdf
 
